@@ -1,2 +1,1 @@
-# solution
-leetcode 代码随想录仓库
+# leetcode 代码随想录仓库
