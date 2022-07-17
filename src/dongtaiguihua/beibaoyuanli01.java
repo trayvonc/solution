@@ -13,6 +13,7 @@ public class beibaoyuanli01 {
                 if(j<weight[i]) dp[i][j]=dp[i-1][j];
                 else
                 dp[i][j]=Math.max(dp[i-1][j],dp[i-1][j-weight[i]]+value[i]);
+
             }
         }
         System.out.println(dp[wlen-1][bagsize]);
