@@ -10,7 +10,7 @@ public class beibaoyuanli01 {
         }
         for(int i=1;i<wlen;i++){
             for(int j=0;j<=bagsize;j++){
-                if(j<weight[i]) dp[i][j]=dp[i-1][j];
+                if(j<weight[i]) dp[i][j]=dp[i-1][j];//二维数组要有赋值操作
                 else
                 dp[i][j]=Math.max(dp[i-1][j],dp[i-1][j-weight[i]]+value[i]);
 
