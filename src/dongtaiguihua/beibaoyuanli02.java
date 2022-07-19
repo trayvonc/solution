@@ -5,7 +5,7 @@ public class beibaoyuanli02 {
         int wlen=weight.length;
         int [] dp=new int[bagsize+1];//dp所有元素被初始化为0
         for(int i=0;i<wlen;i++){//遍历物品
-            for(int j=bagsize;j>=weight[i];j--){
+            for(int j=bagsize;j>=weight[i];j--){//从后往前是为了不被加入多次
                 dp[j]=Math.max(dp[j],dp[j-weight[i]]+value[i]);//和自身比较，没有复制操作
             }
         }
