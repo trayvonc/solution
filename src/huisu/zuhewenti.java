@@ -16,7 +16,7 @@ public class zuhewenti {
             result.add(new ArrayList<>(path));
             return;
         }
-        for(int i=startIndex;i<=n;i++){//n为树的宽度，k为树深度
+        for(int i=startIndex;i<=n-(k-path.size())+1;i++){//n为树的宽度，k为树深度
             path.add(i);
             backtracking(n,k,i+1);
             path.removeLast();
