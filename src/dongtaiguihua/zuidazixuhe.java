@@ -2,7 +2,7 @@ package dongtaiguihua;
 
 public class zuidazixuhe {
     public static int maxSubArray(int[] nums) {
-        //DP[i]表示到i为止的子序列最大和
+        //DP[i]表示到i为止的连续子序列最大和
         int []dp=new int[nums.length];
         dp[0]=nums[0];
         int result=dp[0];
