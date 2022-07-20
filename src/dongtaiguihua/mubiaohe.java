@@ -10,7 +10,7 @@ public class  mubiaohe{
         int [] dp=new int[left+1];//填满包j一共有dp[j]种方法
         dp[0]=1;
         for(int i=0;i<nums.length;i++){
-            for(int j=left;j>=nums[i];j--){//保证左边任然是上一层的
+            for(int j=left;j>=nums[i];j--){//保证左边任然是上一层的,只被使用一次
                 dp[j]+=dp[j-nums[i]];
             }
         }

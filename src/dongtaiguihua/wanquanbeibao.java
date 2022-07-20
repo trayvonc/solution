@@ -1,6 +1,6 @@
 package dongtaiguihua;
 
-public class wanquanbeibao {
+public class wanquanbeibao {//完全要保证前面的都是经过计算的
      //先物品再容量
     public static int wanquan(int[] weight,int[] value,int bagSize){
         int wlen=weight.length;
@@ -12,7 +12,7 @@ public class wanquanbeibao {
         }
         return dp[bagSize];
     }
-    //先容量再武平
+    //先容量再物品
     public static int wanquan1(int[] weight,int[] value,int bagSize){
         int wlen=weight.length;
         int [] dp=new int[bagSize+1];
