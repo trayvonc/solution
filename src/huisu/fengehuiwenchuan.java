@@ -17,13 +17,14 @@ public class fengehuiwenchuan {
             return;
         }
         for(int i=startIndex;i<s.length();i++){
-            //获取startIndex到i的子串
+            //获取startIndex到i的子串，设置结尾为切割位置
             if(isHuiWen(s,startIndex,i)){
                 path.add(s.substring(startIndex,i+1));
             }
             else{//不是则跳过并剪枝
                 continue;
             }
+            //前面是path存储的回文数组，新建开始位置，并用for循环切割
             backtrace(s,i+1);
             path.removeLast();
         }
