@@ -16,7 +16,7 @@ public class fengehuiwenchuan {
             res.add(new ArrayList<>(path));
             return;
         }
-        for(int i=startIndex;i<s.length();i++){
+        for(int i=startIndex;i<s.length();i++){//上一层向下一层确定startIndex
             //获取startIndex到i的子串，设置结尾为切割位置
             if(isHuiWen(s,startIndex,i)){
                 path.add(s.substring(startIndex,i+1));
