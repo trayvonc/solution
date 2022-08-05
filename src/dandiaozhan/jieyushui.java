@@ -15,6 +15,7 @@ public class jieyushui {
                 stack.pop();
                 stack.push(i);
             }else{
+                //要保证单调栈内部（从头到尾升序）入栈前要把所有栈顶元素弹出
                 while(!stack.isEmpty()&&height[i]>height[stack.peek()]){
                     int mid=stack.peek();
                     stack.pop();
