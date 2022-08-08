@@ -14,13 +14,13 @@ public class  mubiaohe{
                 dp[j]+=dp[j-nums[i]];
             }
         }
-        for(int i:dp)
-        System.out.println(i);
+//        for(int i:dp)
+//        System.out.println(i);
         return dp[left];
     }
 
     public static void main(String[] args) {
-        int [] nums={1,1,1,1,1};
-        System.out.println(findTargetSumWays(nums,3));
+        int [] nums={1,2,3,4,5};
+        System.out.println(findTargetSumWays(nums,9));
     }
 }
