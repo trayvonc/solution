@@ -32,10 +32,10 @@ public class zhuadongxi {
         int max=0;
         for(int i=2;i<=n-1;i++){
 
-            for(int j=0;j<=i-2;j++){
-                if(max<dp[j]) max=dp[j];
-            }
-            dp[i]=Math.max(max+values[i],dp[i-1]);
+//            for(int j=0;j<=i-2;j++){
+//                if(max<dp[j]) max=dp[j];
+//            }
+            dp[i]=Math.max(dp[i-2]+values[i],dp[i-1]);
 
         }
         System.out.println(dp[n-1]);
