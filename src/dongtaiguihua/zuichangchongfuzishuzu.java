@@ -1,6 +1,6 @@
 package dongtaiguihua;
 
-public class zuichangchongfuzishuzu {
+public class zuichangchongfuzishuzu {//连续
     public int findLength(int[] nums1, int[] nums2) {
         //dp[i][j]定义为 以i-1,j-1结尾的最长重复子数组长度
         int [][]dp=new int [nums1.length+1][nums2.length+1];
