@@ -5,8 +5,7 @@ import erchashu06.TreeNode;
 //递归地求解，如果空节点视为需要删除
 //如果为叶子节点，且当前节点与叶子节点的总和sum + root.val小于limit，说明此节点需要删除
 //通过节点 node 的每种可能的 “根-叶” 路径上值的总和全都小于给定的 limit的节点，
-//若到达该节点的和sum小于limit，我们会返回一个null，如果一个节点的左右节点均删除
-// 则证明通过此节点的根-叶路径和小于limit，返回删除
+// 如果一个节点的左右节点均删除证明通过此节点的根-叶路径和小于limit，返回删除
 
 public class gengdaoyelujingshangdebuzujiedian {
     public TreeNode sufficientSubset(TreeNode root, int limit) {
@@ -21,6 +20,7 @@ public class gengdaoyelujingshangdebuzujiedian {
         if(root==null) return true;
         //全都为空
         sum=sum+root.val;
+        //叶子节点判断是否需要删除
         if(root.left==null&&root.right==null)
             return sum<limit;
         //协助删除
@@ -32,7 +32,8 @@ public class gengdaoyelujingshangdebuzujiedian {
         if(right==true){
             root.right=null;
         }
-
+        //如果有一条孩子的路径能被保留，说明节点有到根路径有大于limit的路径
+        //如果所有孩子都没有保留，说明任意到根路径都小于limit
         return left&&right;
     }
 }
