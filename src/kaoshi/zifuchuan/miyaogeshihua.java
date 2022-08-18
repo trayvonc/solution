@@ -16,7 +16,7 @@ public class miyaogeshihua {
                 count=0;
             }
         }
-        if(!sb.isEmpty()&&sb.charAt(sb.length()-1)=='-') sb.deleteCharAt(sb.length()-1);
+        if(!sb.toString().isEmpty()&&sb.charAt(sb.length()-1)=='-') sb.deleteCharAt(sb.length()-1);
         sb.reverse();
         return sb.toString().toUpperCase();
     }

@@ -23,11 +23,12 @@ public class fuyuanipdizhi {
         for(int i=startIndex;i<s.length();i++){
             if(isIp(s.substring(startIndex,i+1))){
                 s=s.substring(0,i+1)+'.'+s.substring(i+1);
-                backtracking(s,i+2,pointNum+1);
-                s=s.substring(0,i+1)+s.substring(i+2);
+
             }else{
                 break;//如果当前i不行，那之后的都不行，不用再尝试
             }
+            backtracking(s,i+2,pointNum+1);
+            s=s.substring(0,i+1)+s.substring(i+2);
         }
 
     }

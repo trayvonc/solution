@@ -1,4 +1,6 @@
-package lianbiao02;
+package kaoshi.lianbiao;
+
+import lianbiao02.ListNode;
 
 public class kgeyizufanzhuanlianbiao {
     public ListNode reverseKGroup(ListNode head, int k) {
@@ -16,7 +18,7 @@ public class kgeyizufanzhuanlianbiao {
             start.next=next;
 
             pre=start;
-            end=pre;
+            end=start;
         }
         return dummy.next;
     }
