@@ -8,7 +8,7 @@ public class quickSort {
     }
     static void sort(int []nums,int L,int R){
         if(L>=R)return;
-        int mid=(L+R)/2;
+//        int mid=(L+R)/2;
 //        swap(nums,L,mid);
         int index=L;
         int pri=nums[L];
