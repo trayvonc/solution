@@ -1,6 +1,6 @@
 package kaoshi.erchashu;
 
-import erchashu06.TreeNode;
+import daimasuixianglu.erchashu06.TreeNode;
 
 public class erchashudezuijingonggongzuxian {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

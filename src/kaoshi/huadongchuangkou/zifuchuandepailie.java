@@ -15,11 +15,11 @@ public class zifuchuandepailie {
         while(right<s2.length()){
             char c=s2.charAt(right);
             if(need.containsKey(c)){
-                map.put(c,map.getOrDefault(c,0)+1);
-                if(need.get(c).equals(map.get(c)))valid++;
+                map.put(c,map.getOrDefault(c,0)+1);//统计加入right后的变化
+                if(need.get(c).equals(map.get(c)))valid++;//满足个数++
             }
-           while(right-left+1>=s1.length()){
-               if(valid==need.size()&&right-left+1==s1.length())return true;
+           while(right-left+1>=s1.length()){//需要连续，找出让窗口大小相等，且凑出的
+               if(valid==need.size())return true;
                char d=s2.charAt(left);
                if(need.containsKey(d)){
                    if(need.get(d).equals(map.get(d))) valid--;

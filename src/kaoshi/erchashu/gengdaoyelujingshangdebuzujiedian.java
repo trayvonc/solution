@@ -1,6 +1,6 @@
 package kaoshi.erchashu;
 
-import erchashu06.TreeNode;
+import daimasuixianglu.erchashu06.TreeNode;
 //dfs方法传入节点root以及到达该节点前的路径总和sum
 //递归地求解，如果空节点视为需要删除
 //如果为叶子节点，且当前节点与叶子节点的总和sum + root.val小于limit，说明此节点需要删除

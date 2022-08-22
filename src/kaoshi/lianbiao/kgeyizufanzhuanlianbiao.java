@@ -1,6 +1,6 @@
 package kaoshi.lianbiao;
 
-import lianbiao02.ListNode;
+import daimasuixianglu.lianbiao02.ListNode;
 
 public class kgeyizufanzhuanlianbiao {
     public ListNode reverseKGroup(ListNode head, int k) {

@@ -1,6 +1,6 @@
 package kaoshi.erchashu;
 
-import erchashu06.TreeNode;
+import daimasuixianglu.erchashu06.TreeNode;
 
 public class zuijingonggongzuxian {
     //有三种情况，异侧，p为祖先，q为祖先,线序遍历
