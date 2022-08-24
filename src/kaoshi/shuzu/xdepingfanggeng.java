@@ -1,4 +1,4 @@
-package kaoshi;
+package kaoshi.shuzu;
 
 public class xdepingfanggeng {
     public static int mySqrt(int x) {

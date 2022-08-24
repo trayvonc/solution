@@ -1,4 +1,4 @@
-package kaoshi;
+package kaoshi.shuzu;
 
 public class quickSort {
     public static void main(String[] args) {

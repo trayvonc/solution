@@ -1,9 +1,8 @@
 package kaoshi;
 
 import java.io.*;
-import java.util.Scanner;
 
-public class test1 {
+public class wenjian {
     public static void main(String[] args) {
 //        FileInputStream fileInputStream=null;
         FileReader reader=null;
