@@ -1,6 +1,8 @@
 package kaoshi.wangyi;
 import java.util.*;
 public class test1 {
+    //两个整数a,b，每次操作可以选择一个整数删除一位。
+    // 希望a是b倍数或b是a倍数，返回最少操作次数
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         // 注意 hasNext 和 hasNextLine 的区别
