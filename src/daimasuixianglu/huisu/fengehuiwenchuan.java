@@ -16,14 +16,13 @@ public class fengehuiwenchuan {
             res.add(new ArrayList<>(path));
             return;
         }
-        for(int i=startIndex;i<s.length();i++){//上一层向下一层确定startIndex
-            //获取startIndex到i的子串，设置结尾为切割位置
-            if(isHuiWen(s,startIndex,i)){
-                path.add(s.substring(startIndex,i+1));
-            }
-            else{//不是则跳过并剪枝
+        for(int i=startIndex;i<s.length();i++){
+            //同层剪枝
+            if(!isHuiWen(s,startIndex,i)){
                 continue;
             }
+            //获取startIndex到i的子串
+            path.add(s.substring(startIndex,i+1));
             //前面是path存储的回文数组，新建开始位置，并用for循环切割
             backtrace(s,i+1);
             path.removeLast();
