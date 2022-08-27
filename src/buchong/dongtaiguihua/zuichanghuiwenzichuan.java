@@ -1,4 +1,4 @@
-package kaoshi.dongtaiguihua;
+package buchong.dongtaiguihua;
 
 public class zuichanghuiwenzichuan {
     public String longestPalindrome(String s) {

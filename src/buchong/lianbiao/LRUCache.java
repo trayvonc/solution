@@ -1,6 +1,5 @@
-package kaoshi.lianbiao;
+package buchong.lianbiao;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;

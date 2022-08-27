@@ -1,4 +1,4 @@
-package kaoshi.huadongchuangkou;
+package buchong.huadongchuangkou;
 
 import java.util.HashMap;
 

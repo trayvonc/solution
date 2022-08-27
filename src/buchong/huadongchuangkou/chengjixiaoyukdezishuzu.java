@@ -1,4 +1,4 @@
-package kaoshi.huadongchuangkou;
+package buchong.huadongchuangkou;
 
 public class chengjixiaoyukdezishuzu {
     public int numSubarrayProductLessThanK(int[] nums, int k) {

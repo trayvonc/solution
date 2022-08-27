@@ -1,4 +1,4 @@
-package kaoshi.erchashu;
+package buchong.erchashu;
 
 import daimasuixianglu.erchashu06.TreeNode;
 

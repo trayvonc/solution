@@ -1,6 +1,4 @@
-package kaoshi.dongtaiguihua;
-
-import java.util.Arrays;
+package buchong.dongtaiguihua;
 
 public class kebei3zhengchudezuidahe {
     public static int maxSumDivThree(int[] nums) {

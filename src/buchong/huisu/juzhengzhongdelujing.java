@@ -1,4 +1,4 @@
-package kaoshi.huisu;
+package buchong.huisu;
 
 public class juzhengzhongdelujing {
     public static boolean exist(char[][] board, String word) {

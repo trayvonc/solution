@@ -1,4 +1,4 @@
-package kaoshi.huadongchuangkou;
+package buchong.huadongchuangkou;
 
 public class zuidalianxu1degeshu3 {
     public int longestOnes(int[] nums, int k) {

@@ -1,4 +1,4 @@
-package kaoshi.zifuchuan;
+package buchong.zifuchuan;
 
 public class miyaogeshihua {
     static public String licenseKeyFormatting(String s, int k) {

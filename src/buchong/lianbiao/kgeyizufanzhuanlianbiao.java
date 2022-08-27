@@ -1,4 +1,4 @@
-package kaoshi.lianbiao;
+package buchong.lianbiao;
 
 import daimasuixianglu.lianbiao02.ListNode;
 

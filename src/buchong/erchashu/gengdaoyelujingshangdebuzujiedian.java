@@ -1,4 +1,4 @@
-package kaoshi.erchashu;
+package buchong.erchashu;
 
 import daimasuixianglu.erchashu06.TreeNode;
 //dfs方法传入节点root以及到达该节点前的路径总和sum
