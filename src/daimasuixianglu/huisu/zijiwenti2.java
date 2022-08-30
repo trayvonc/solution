@@ -19,7 +19,7 @@ public class zijiwenti2 {//包含重复，需要在本层去重
         res.add(new ArrayList<>(path));
         for(int i=startIndex;i<nums.length;i++){
             if(i>0&&nums[i]==nums[i-1]&&used[i-1]==false) continue;
-            //如果本层第二次取这个数，会包含在上一层中，
+            //如果本层第二次取这个数，会包含在左侧一枝中，
             // 单个结果可以重复，但是res结果集不能重复
             path.add(nums[i]);
             used[i]=true;
