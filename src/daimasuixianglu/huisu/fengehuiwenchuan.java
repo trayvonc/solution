@@ -16,8 +16,8 @@ public class fengehuiwenchuan {
             res.add(new ArrayList<>(path));
             return;
         }
-        for(int i=startIndex;i<s.length();i++){
-            //同层剪枝
+        for(int i=startIndex;i<s.length();i++){//startindex是给下一层看的，本层的字符为startindex到i
+            //同层遍历 剪一根树枝
             if(!isHuiWen(s,startIndex,i)){
                 continue;
             }

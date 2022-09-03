@@ -10,7 +10,7 @@ public class zijiwenti2 {//包含重复，需要在本层去重
     LinkedList<Integer> path=new LinkedList<>();
     boolean [] used;
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        used=new boolean[nums.length];
+        used=new boolean[nums.length];//用used和排序来去重
         Arrays.sort(nums);
         back(res,path,nums,0);
         return res;
@@ -20,7 +20,7 @@ public class zijiwenti2 {//包含重复，需要在本层去重
         for(int i=startIndex;i<nums.length;i++){
             if(i>0&&nums[i]==nums[i-1]&&used[i-1]==false) continue;
             //如果本层第二次取这个数，会包含在左侧一枝中，
-            // 单个结果可以重复，但是res结果集不能重复
+            //单个结果可以重复，但是res结果集不能重复
             path.add(nums[i]);
             used[i]=true;
             back(res,path,nums,i+1);
